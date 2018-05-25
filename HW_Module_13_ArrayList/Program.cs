@@ -24,6 +24,8 @@ namespace HW_Module_13_ArrayList
 {
     class Program
     {
+        public static string path = "test.txt";
+
         public struct Student
         {
             public string secondName { get; set; }
@@ -84,7 +86,7 @@ namespace HW_Module_13_ArrayList
             try
             {
                 ArrayList all = new ArrayList();
-                StreamReader read = new StreamReader(@"input.txt", Encoding.Default);
+                StreamReader read = new StreamReader(path, Encoding.Default);
 
                 while (!read.EndOfStream)
                 {
